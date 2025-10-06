@@ -13,10 +13,10 @@ namespace DesafioPOO.Models
         }
 
         // TODO: Implementar as propriedades faltantes de acordo com o diagrama
-        protected string Numero { get; set; }
-        public string Modelo { get; set; }
-        public string Imei { get; set; }
-        public int Memoria { get; set; }
+        public string Numero { get; set; }
+        private string Modelo { get; set; }
+        private string Imei { get; set; }
+        private int Memoria { get; set; }
 
         public void Ligar()
         {
@@ -30,9 +30,9 @@ namespace DesafioPOO.Models
 
         public abstract void InstalarAplicativo(string nomeApp);
 
-        public void apresentar(string sistema)
+        public void apresentarSistema(string sistema)
         {
-            Console.WriteLine($"\n\b-- BEM VINDO AO SISTEMA {sistema}--\b\n");
+            Console.WriteLine($"\n\n\b-- BEM VINDO AO SISTEMA {sistema}--\b\n");
         }
     }
 }
